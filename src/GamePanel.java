@@ -98,7 +98,7 @@ public class GamePanel extends JPanel implements ActionListener {
     }
 
     public void checkApple() {
-        if ((x[0] == appleX) && (y[0] == appleY)) { // Exact match of snake head and apple
+        if ((x[0] == appleX) && (y[0] == appleY)) { 
             bodyparts++;
             applesEaten++;
             newApple();
