@@ -112,10 +112,8 @@ public class GamePanel extends JPanel implements ActionListener {
             }
         }
 
-        // Debugging: print snake's head position
-        System.out.println("Snake head position: (" + x[0] + ", " + y[0] + ")");
+        
 
-        // Check if head touches frame boundaries
         if (x[0] < 0 || x[0] >= screen_width || y[0] < 0 || y[0] >= screen_height) {
             slithering = false;
         }
@@ -134,7 +132,6 @@ public class GamePanel extends JPanel implements ActionListener {
 
         if (this.getComponentCount() == 0) {
             JButton button = new JButton("Play Again?");
-
 
 
             button.addActionListener(new ActionListener() {
